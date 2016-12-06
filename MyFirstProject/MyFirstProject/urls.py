@@ -18,6 +18,8 @@ from django.contrib import admin
 from myblog import views
 
 urlpatterns = [
+	url(r'^$',views.homePage,name='homgPage'),
     url(r'^admin/',admin.site.urls),
-	url(r'^myblog/',views.archive),
+	url(r'^admin/myblog/(?P<id_num>\d+)/$',views.blogDisplay,name='blogDisplay'),
+	url(r'^admin/about_me/$',views.aboutMe,name='aboutMe'),
 ]

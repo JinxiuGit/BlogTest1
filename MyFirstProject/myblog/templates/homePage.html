@@ -1,0 +1,14 @@
+<HTML>
+	<HEAD>
+		<TITLE> myblog </TITLE>
+	</HEAD>
+	<BODY>
+		<H1 align="center"> Welcome to My Blog </H1>
+		<H2 align="center"> Be Simple and Never Give Up </H2>
+		<H2> author: <a href="{% url 'aboutMe' %}">{{author}}</a></H2>
+		{% for post in posts %}
+			<li><a href="{% url 'blogDisplay' post.id%}">{{post.title}}</a> </li>
+			<h5>{{post.timestamp}}</h5>
+		{% endfor %}
+	</BODY>
+</HTML>
