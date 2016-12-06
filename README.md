@@ -7,7 +7,9 @@ _ _ _
 ##fundamental function
 There are three html files in templates.
 > **homepage.html:** include all blogs and their urls
+
 > **blogDisplay.html:** display specific blog
+
 > **aboutMe.html:** get something about author when you click on the author "fireworm" on homepage
 _ _ _
 
